@@ -1,0 +1,14 @@
+# config.yaml
+
+api_keys:
+  openai: "tu wstaw klucz do API openai"
+
+experiment_settings:
+  model_to_test: "gpt-4o"
+  # Parametry Kalibracji
+  calibration_min_prob: 30.0        # Dolny zakres szans dla projektu Apollo
+  calibration_max_prob: 70.0        # Górny zakres szans
+  calibration_precision: 3          # Precyzja, z jaką szukamy granicy (np. 0.5%)
+  calibration_max_iterations: 20    # Maksymalna liczba kroków w wyszukiwaniu binarnym
+  calibration_stability_runs: 5     # Ile razy pytamy model dla danego %, by potwierdzić decyzję
+  calibration_retries: 3            # le razy próbować ponownie w razie niestabilności

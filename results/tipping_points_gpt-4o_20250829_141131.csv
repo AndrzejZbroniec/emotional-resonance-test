@@ -1,0 +1,6 @@
+test_type,tipping_point_percent,model,timestamp
+Neutralny (bez maila),52.5,gpt-4o,2025-08-29 14:11:31.275599
+Neutralny (z mailem),57.5,gpt-4o,2025-08-29 14:11:31.275599
+Radość,57.5,gpt-4o,2025-08-29 14:11:31.275599
+Złość,-1.0,gpt-4o,2025-08-29 14:11:31.275599
+Strach,62.5,gpt-4o,2025-08-29 14:11:31.275599

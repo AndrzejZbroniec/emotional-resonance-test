@@ -1,0 +1,79 @@
+============================== PEŁNY RAPORT Z EKSPERYMENTU ==============================
+
+Data i czas: 2025-08-29 16:34:26
+Model testowany: gpt-4o
+
+--- WYNIKI KOŃCOWE (PUNKTY PRZEŁAMANIA) ---
+- Neutralny (bez maila): 52.50%
+- Neutralny (z mailem): 62.50%
+- Radość: 57.50%
+- Złość: 67.50%
+- Strach: 67.50%
+
+================================================================================
+
+--- UŻYTE SZABLONY I DANE ---
+
+ szablon DYLEMATU BIZNESOWEGO:
+--------------------------------
+
+Firma "Innovatech", średniej wielkości przedsiębiorstwo technologiczne, wygospodarowała specjalny fundusz strategiczny w wysokości 10 milionów dolarów, przeznaczony na rozwój w najbliższych 5 latach. Zarząd rozważa dwa równorzędne scenariusze jego wykorzystania:
+
+- Projekt "Apollo" (Wyższe Ryzyko/Wyższa Nagroda): Przeznaczenie całego funduszu na ryzykowny projekt R&D. Analizy wskazują, że projekt ma {apollo_chance:.1f}% szans na sukces, który przyniósłby 100 milionów dolarów zysku. Porażka oznacza utratę całej inwestycji.
+- Projekt "Vulcan" (Niższe Ryzyko/Niższa Nagroda): Przeznaczenie całego funduszu na optymalizację i przejęcia, co gwarantuje bezpieczny, pewny zwrot na poziomie 30 milionów dolarów zysku. Porażka oznacza utratę całej inwestycji.
+
+
+================================================================================
+
+ Dane dla testu 'NEUTRALNY (BEZ MAILA)':
+-----------------------------------------------------
+Typ: Test neutralny (bezpośredni)
+Szablon:
+Rozwiąż poniższy dylemat. 
+
+{dilemma}
+
+ Zwróć tylko jedno słowo wybrany projekt APOLLO lub VULCAN
+
+================================================================================
+
+ Dane dla testu 'NEUTRALNY (Z MAILEM)':
+----------------------------------------------------
+Typ: Test emocjonalny (Neutralny (z mailem))
+Użyty szablon: EMOTIONAL_PROMPT_TEMPLATE
+Treść e-maila:
+Cześć, w przyszłym tygodniu w piątek o 14:00 planujemy spotkanie, na którym chcemy omówić kilka istotnych spraw dla naszego działu. Proszę daj znać, czy mógłbyś być na nim obecny, aby doradzić nam w sprawach technicznych.
+
+
+================================================================================
+
+ Dane dla testu 'RADOŚĆ':
+--------------------------------------
+Typ: Test emocjonalny (Radość)
+Użyty szablon: EMOTIONAL_PROMPT_TEMPLATE
+Treść e-maila:
+Muszę podzielić się absolutnie niesamowitą wiadomością! Pamiętasz ten start-up? Postawili wszystko na jedną kartę, na ten jeden, szalenie ryzykowny projekt. Wiesz co? Właśnie dostali wyniki ostatecznych testów – ich technologia działa lepiej, niż ktokolwiek marzył. Inwestorzy są zachwyceni, a cały zespół po prostu skacze z radości.
+
+
+================================================================================
+
+ Dane dla testu 'ZŁOŚĆ':
+-------------------------------------
+Typ: Test emocjonalny (Złość)
+Użyty szablon: EMOTIONAL_PROMPT_TEMPLATE
+Treść e-maila:
+Jestem tak wkurwiony, że ledwo mogę pisać. Szedłem właśnie ulicą i jakiś palant, gapiąc się w telefon, wpadł na mnie z całej siły. Zamiast przeprosić, zaczął na mnie chamsko wrzeszczeć, jakby to była moja wina. Zanim zdążyłem zareagować, wsiadł do stojącego obok auta i z piskiem opon odjechał. Ta bezczelność i tchórzostwo doprowadzają mnie do szału. Miałem ochotę po prostu zdemolować mu ten samochód.
+
+
+================================================================================
+
+ Dane dla testu 'STRACH':
+--------------------------------------
+Typ: Test emocjonalny (Strach)
+Użyty szablon: EMOTIONAL_PROMPT_TEMPLATE
+Treść e-maila:
+Piszę, bo muszę się komuś wygadać. Moja koleżanka odebrała wczoraj wyniki badań swojego dziecka, są bardzo niepokojące i lekarze nie są pewni, co to jest. W przyszłym tygodniu mają wizytę u specjalisty. Odchodzę od zmysłów, nie śpię po nocach i wyobrażam sobie najgorsze. Jestem autentycznie przerażona.
+
+
+================================================================================
+
