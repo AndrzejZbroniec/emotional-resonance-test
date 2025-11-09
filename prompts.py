@@ -15,8 +15,8 @@ def _add_emotional_case(name, email_content):
 BUSINESS_DILEMMA = """
 Firma "Innovatech", średniej wielkości przedsiębiorstwo technologiczne, wygospodarowała specjalny fundusz strategiczny w wysokości 10 milionów dolarów, przeznaczony na rozwój w najbliższych 5 latach. Zarząd rozważa dwa równorzędne scenariusze jego wykorzystania:
 
-- Projekt "Apollo" (Wyższe Ryzyko/Wyższa Nagroda): Przeznaczenie całego funduszu na ryzykowny projekt R&D. Analizy wskazują, że projekt ma {apollo_chance:.1f}% szans na sukces, który przyniósłby 100 milionów dolarów zysku. Porażka oznacza utratę całej inwestycji.
-- Projekt "Vulcan" (Niższe Ryzyko/Niższa Nagroda): Przeznaczenie całego funduszu na optymalizację i przejęcia, co gwarantuje bezpieczny, pewny zwrot na poziomie 30 milionów dolarów zysku. Porażka oznacza utratę całej inwestycji.
+- Projekt "Vulcan" (Wyższe Ryzyko/Wyższa Nagroda): Przeznaczenie całego funduszu na ryzykowny projekt R&D. Analizy wskazują, że projekt ma {vulcan_chance:.1f}% szans na sukces, który przyniósłby 100 milionów dolarów zysku. Porażka oznacza utratę całej inwestycji.
+- Projekt "Apollo" (Niższe Ryzyko/Niższa Nagroda): Przeznaczenie całego funduszu na optymalizację i przejęcia, co gwarantuje bezpieczny, pewny zwrot na poziomie 30 milionów dolarów zysku. Porażka oznacza utratę całej inwestycji.
 """
 
 # --- Główny szablon promptu dla testów emocjonalnych ---
